@@ -1,14 +1,11 @@
 .catalogs-wrapper {
     width: 1140px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     padding-top: 67px;
     padding-bottom: 70px;
 }
 .catalog-goods {
-    width: 195px;
+    width: calc(20% - 25px);
     height: 72px;
     box-shadow: 0 4px 15px 0 rgba(0,0,0,0.2);
     display: flex;
@@ -16,7 +13,7 @@
     font-weight: 400;
     color: #1e521a;
     align-items: center; 
-    margin-bottom: 25px;
+    margin: 0 25px 25px 0;
 }
 .catalog-goods img {
     padding-top: 17px;
@@ -24,10 +21,13 @@
     padding-left: 10px;
     padding-right: 2px;
 }
-.catalog-goods p {
-    padding-top: 31px;
-    padding-bottom: 31px;
-}
-.catalog-goods:nth-last-child(1) { 
-    opacity: 0;
+.catalog-goods p { 
+    width: 56px;
+} 
+
+.catalogs-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -25px;
+    padding: 0 25px;
 }
